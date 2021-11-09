@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     public void openFileChooser(View view)
     {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("*/*");
+        intent.setType("text/plain");
         startActivityForResult(intent, requestCode);
     }
 
